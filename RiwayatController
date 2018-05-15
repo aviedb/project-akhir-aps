@@ -7,6 +7,22 @@ class RiwayatController
     this.halamanRiwayatPemesanan = halamanRiwayatPemesanan
   end
 
-  void melihatRiwayatPemesanan(int id_pesanan)
+  Pesanan[] melihatSemuaRiwayatPemesanan()
   begin
+    try {
+      pesanan ServiceAPI.getInstance().fetchAllPesanan()
+      return pesanan
+    } catch (e) {
+      this.screen.tampilkanPesanError('Gagal melihat semua transaksi')
+    }
+  end
+
+  Pesanan[] melihatRiwayatPemesanan(int pesanan_id)
+  begin
+    try {
+      pesanan ServiceAPI.getInstance().fetchPesanan(pesanan_id)
+      return pesanan
+    } catch (e) {
+      this.screen.tampilkanPesanError('Gagal melihat semua transaksi')
+    }
   end

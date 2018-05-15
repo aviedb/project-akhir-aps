@@ -9,8 +9,10 @@ class RegisterScreen
 
   void submitRegister()
   begin
+    this.controller.login(this.email, this.password)
   end
 
   void tampilPesanError()
   begin
+    show error message
   end

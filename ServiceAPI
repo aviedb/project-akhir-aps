@@ -56,10 +56,22 @@ class ServiceAPI
   begin
     query = insert to pesanan table with p's data
     result = HTTP.get(this.END_POINT_URL, query)
-    
+
     json = result.toJSON()
     LayananEmail.sendNotification(json)
   end
+
+  Pesanan[] fetchAllPesanan() {
+    query = fetch all pesanan query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
+  }
+
+  Pesanan fetchPesanan(int id) {
+    query = fetch pesanan with the id query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
+  }
 
   Customer login(String email, String password)
   begin

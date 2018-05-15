@@ -8,14 +8,22 @@ class HalamanRiwayatPemesanan
     this.controller = controller
   end
 
+  void melihatSemuaRiwayatPemesanan()
+  begin
+    this.controller.melihatSemuaRiwayatPemesanan()
+  end
+
+  void melihatRiwayatPemesanan(int pesanan_id)
+  begin
+    this.controller.melihatPesanan(pesanan_id)
+  end
+
   void tampilkanRiwayatPemesanan(Pesanan pesanan)
   begin
+    render pesanan
   end
 
   void tampilPesanError()
   begin
-  end
-
-  void melihatRiwayat()
-  begin
+    show error message
   end
