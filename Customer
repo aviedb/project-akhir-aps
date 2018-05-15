@@ -8,8 +8,6 @@ class Customer
   begin
   end
 
-  mengubah?
-
   void setNoHP(String noHP)
   begin
     this.noHP = noHP
