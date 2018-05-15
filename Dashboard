@@ -1,6 +1,7 @@
 class dashboard
   Declarations
     LoginController controller
+    Customer customer
 
   void setController(LoginContoller controller)
   begin
@@ -9,4 +10,5 @@ class dashboard
 
   void tampilDashboard()
   begin
+    menampilkan dashboard dengan data this.customer
   end
