@@ -1,6 +1,7 @@
 class PesananController
   Declarations
     HalamanPemesanan halamanPemesanan
+    Pesanan pesanan
 
   void setHalamanPemesanan(HalamanPemesanan halamanPemesanan)
   begin
@@ -9,8 +10,28 @@ class PesananController
 
   Film[] getFilm(String location)
   begin
+    films = ServiceAPI.getInstance().fetchAllFilmsByLocation(location)
+    this.screen.showFilms(films)
   end
 
-  Bioskop[] getBioskop(int id)
+  Bioskop[] getBioskops(int id_film)
   begin
+    bioskops = ServiceAPI.getInstance().fetchAllBioskopsByLocation(id_film)
+    this.screen.showFilms(bioskops)
+  end
+
+  void inputPesanan(String kota, Film film, Bioskop bioskop, Date waktu, String[] kursi) 
+  begin
+    this.pesanan = new Pesanan(spread all parameters)
+    this.screen.showDetailPemesanan()
+  end
+
+  void validasiPemesanan() 
+  begin
+    try {
+      ServiceAPI.getInstance().insertPesanan(this.pesanan)
+      this.screen.showDetailPemesanan()
+    } catch (e) {
+      this.screen.tampilkanPesanError('Gagal memesan')
+    } 
   end

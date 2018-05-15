@@ -7,4 +7,12 @@ class HalamanPemesanan
     this.controller = controller
   end
 
-  
+  void showFilms (Films[] films)
+  begin
+    print all films
+  end
+
+  void showBioskops (Bioskop[] bioskops)
+  begin
+    print all bioskops
+  end

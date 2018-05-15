@@ -55,7 +55,10 @@ class ServiceAPI
   void insertPesanan(Pesanan p)
   begin
     query = insert to pesanan table with p's data
-    HTTP.get(this.END_POINT_URL, query)
+    result = HTTP.get(this.END_POINT_URL, query)
+    
+    json = result.toJSON()
+    LayananEmail.sendNotification(json)
   end
 
   Customer login(String email, String password)
