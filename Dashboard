@@ -1,0 +1,12 @@
+class dashboard
+  Declarations
+    LoginController controller
+
+  void setController(LoginContoller controller)
+  begin
+    this.controller = controller
+  end
+
+  void tampilDashboard()
+  begin
+  end

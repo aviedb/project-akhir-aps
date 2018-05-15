@@ -1,0 +1,11 @@
+class HalamanInformasiFilm
+  FilmController controller
+
+  void setController(FilmController controller)
+  begin
+    this.controller = controller
+  end
+
+  void tampilkanInformasiFilm()
+  begin
+  end

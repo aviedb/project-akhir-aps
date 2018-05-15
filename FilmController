@@ -1,0 +1,19 @@
+class FilmController
+  Declarations
+    HalamanPemilihanFilm halamanPemilihanFilm
+    HalamanInformasiFilm halamanInformasiFilm
+    Film film
+
+  void setHalamanPemilihanFilm(HalamanPemilihanFilm halamanPemilihanFiln)
+  begin
+    this.halamanPemilihanFilm = halamanPemilihanFilm
+  end
+
+  void setHalamanInformasiFilm(HalamanInformasiFilm halamanInformasiFilm)
+  begin
+    this.halamanInformasiFilm = halamanInformasiFilm
+  end
+
+  void memilihFilm(int id_film)
+  begin
+  end

@@ -1,0 +1,16 @@
+class RegisterScreen
+  Declaraions
+    RegisterController controller
+
+  void setController(RegisterController controller)
+  begin
+    this.controller = controller
+  end
+
+  void submitRegister()
+  begin
+  end
+
+  void tampilPesanError()
+  begin
+  end

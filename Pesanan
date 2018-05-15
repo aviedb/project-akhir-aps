@@ -1,0 +1,16 @@
+class Pesanan
+  Declarations
+    int ID
+    String kodePemesanan
+    Film film
+    Date waktuTayang
+    String studio
+    String[] kursi
+    Bioskop bioskop
+    String kodePromo
+    Customer customer
+    Double totalHarga
+
+  void Pesanan(Film film, Date waktuTayang, String studio, String[] kursi, Bioskop bioskop, String kodePromo)
+  begin
+  end

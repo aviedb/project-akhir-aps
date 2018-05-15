@@ -1,0 +1,20 @@
+class Bioskop
+  Declarations
+    string nama
+    String lokasi
+    Film[] film
+
+  void setFilm(Film[] film)
+  begin
+    this.film = film
+  end
+
+  String getNama()
+  begin
+    return this.nama
+  end
+
+  String getLokasi()
+  begin
+    return this.lokasi
+  end

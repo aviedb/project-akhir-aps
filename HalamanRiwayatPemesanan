@@ -1,0 +1,21 @@
+class HalamanRiwayatPemesanan
+  Declarations
+    RiwayatController controller
+    Pesanan pesanan
+
+  void setController(RiwayatController controller)
+  begin
+    this.controller = controller
+  end
+
+  void tampilkanRiwayatPemesanan(Pesanan pesanan)
+  begin
+  end
+
+  void tampilPesanError()
+  begin
+  end
+
+  void melihatRiwayat()
+  begin
+  end

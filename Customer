@@ -1,0 +1,41 @@
+class Customer
+  Declarations
+    String noHP
+    String email
+    String password
+
+  void memesanTiket()
+  begin
+  end
+
+  mengubah?
+
+  void setNoHP(String noHP)
+  begin
+    this.noHP = noHP
+  end
+
+  void setEmail(String email)
+  begin
+    this.email = email
+  end
+
+  String getNoHP()
+  begin
+    return this.getNoHP
+  end
+
+  String getEmail()
+  begin
+    return this.email
+  end
+
+  String getPassword()
+  begin
+    return this.password
+  end
+
+  void setPassword(String password)
+  begin
+    this.password = password
+  end

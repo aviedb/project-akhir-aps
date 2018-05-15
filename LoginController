@@ -1,0 +1,18 @@
+class LoginController
+  Declarations
+    LoginScreen loginScreen
+    Dashboard dashboard
+
+  void setDashboard(Dashboard dashboard)
+  begin
+    this.dashboard = dashboard
+  end
+
+  void setLoginScreen(LoginScreen halaman)
+  begin
+    this.loginScreen = loginScreen
+  end
+
+  void login(String email, String password)
+  begin
+  end

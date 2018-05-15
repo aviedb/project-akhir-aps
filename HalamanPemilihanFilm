@@ -1,0 +1,16 @@
+class HalamanPemilihanFilm
+  Declarations
+    FilmController controller
+
+  void setController(FilmController controller)
+  begin
+    this.controller = controller
+  end
+
+  void tampilkanPesanError()
+  begin
+  end
+
+  void memilihFilm()
+  begin
+  end

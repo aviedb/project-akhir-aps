@@ -1,0 +1,10 @@
+class HalamanPemesanan
+  Declarations
+    PesanController controller
+
+  void setController (PesanController controller)
+  begin
+    this.controller = controller
+  end
+
+  

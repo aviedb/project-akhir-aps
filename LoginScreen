@@ -1,0 +1,16 @@
+class LoginScreen
+  Declarations
+    LoginController controller
+
+  void setController(LoginController controller)
+  begin
+    this.controller = controller
+  end
+
+  void submitLogin()
+  begin
+  end
+
+  void tampilPesanError()
+  begin
+  end

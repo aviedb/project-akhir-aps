@@ -1,0 +1,41 @@
+class ServiceAPI
+  Declarations
+    ServiceAPI instance
+
+  ServiceAPI getInstance()
+  begin
+    if(this.instance == null)
+    begin
+      this.instance = new ServiceAPI()
+    end
+
+    return this.instance
+  end
+
+  Film fetchFilm(int id)
+  begin
+  end
+
+  Film[] fetchAllFilm()
+  begin
+  end
+
+  Bioskop fetchBioskop(int id)
+  begin
+  end
+
+  Bioskop[] fetchAllBioskop()
+  begin
+  end
+
+  void insertPesanan(Pesanan pesanan)
+  begin
+  end
+
+  Customer login(String email, String password)
+  begin
+  end
+
+  Customer register(Customer customer)
+  begin
+  end
