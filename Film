@@ -4,16 +4,3 @@ class Film
     Genre genre
     String sinopsis
     Date[] jamTayang
-
-  void getFilmData()
-  begin
-    return
-  end
-
-  void setFilmData(String judul, Genre genre, String sinopsis, Date[] jamTayang)
-  begin
-    this.judul = judul
-    this.genre = genre
-    this.sinopsis = sinopsis
-    this.jamTayang = jamTayang
-  end
