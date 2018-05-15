@@ -16,3 +16,13 @@ class HalamanPemesanan
   begin
     print all bioskops
   end
+
+  void tampilkanDashboardScreen ()
+  begin
+    route to (new Dashboard())
+  end
+
+  void tampilkanPesananError (error)
+  begin
+    show error message
+  end
