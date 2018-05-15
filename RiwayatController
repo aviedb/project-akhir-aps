@@ -1,0 +1,12 @@
+class RiwayatController
+  Declarations
+    HalamanRIwayatPemesanan halamanRiwayatPemesanan
+
+  void setHalamanRiwayatPemesanan(HalamanRiwayatPemesanan halaman)
+  begin
+    this.halamanRiwayatPemesanan = halamanRiwayatPemesanan
+  end
+
+  void melihatRiwayatPemesanan(int id_pesanan)
+  begin
+  end

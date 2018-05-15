@@ -1,0 +1,8 @@
+Enum Genre
+begin
+  FANTASY
+  ACTION
+  SCI-FI
+  COMEDY
+  ROMANCE
+end
