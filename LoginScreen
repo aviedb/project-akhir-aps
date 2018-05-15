@@ -1,6 +1,8 @@
 class LoginScreen
   Declarations
     LoginController controller
+    String email
+    String password
 
   void setController(LoginController controller)
   begin
@@ -9,8 +11,10 @@ class LoginScreen
 
   void submitLogin()
   begin
+    this.controller.login(this.email, this.password)
   end
 
   void tampilPesanError()
   begin
+    menampilkan pesan error
   end

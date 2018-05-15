@@ -13,4 +13,5 @@ class Pesanan
 
   void Pesanan(Film film, Date waktuTayang, String studio, String[] kursi, Bioskop bioskop, String kodePromo)
   begin
+    set all attributes to all of this method parameters
   end

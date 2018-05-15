@@ -1,5 +1,7 @@
 class HalamanInformasiFilm
-  FilmController controller
+  Declarations
+    FilmController controller
+    String film_id
 
   void setController(FilmController controller)
   begin
@@ -8,4 +10,5 @@ class HalamanInformasiFilm
 
   void tampilkanInformasiFilm()
   begin
+    this.controller.memilihFilm(this.film_id)
   end

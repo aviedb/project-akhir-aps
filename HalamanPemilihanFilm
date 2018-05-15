@@ -1,6 +1,7 @@
 class HalamanPemilihanFilm
   Declarations
     FilmController controller
+    film_id
 
   void setController(FilmController controller)
   begin
@@ -9,8 +10,10 @@ class HalamanPemilihanFilm
 
   void tampilkanPesanError()
   begin
+    menampilkan pesan error
   end
 
   void memilihFilm()
   begin
+    this.controller.memilihFilm(this.film_id)
   end
