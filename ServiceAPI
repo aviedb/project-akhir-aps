@@ -1,6 +1,11 @@
 class ServiceAPI
   Declarations
     ServiceAPI instance
+    String END_POINT_URL
+
+  ServiceAPI begin
+    create connection
+  end
 
   ServiceAPI getInstance()
   begin
@@ -14,11 +19,16 @@ class ServiceAPI
 
   Film fetchFilm(int id)
   begin
-    
+    query = fetch film by id query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
   Film[] fetchAllFilm()
   begin
+  query = fetch all films query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
   Bioskop fetchBioskop(int id)
