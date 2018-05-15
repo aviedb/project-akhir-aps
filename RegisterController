@@ -10,9 +10,8 @@ class RegisterController
   void register(String nama, String email, String noHP, String password)
   begin
     try {
-      customer = new Customer(email, noHP, password)
-      ServiceAPI.getInstance().register(customer)
-      this.halamanDashboard.tampilkanDashboard()
+      customer = ServiceAPI.getInstance().register(nama, email, noHP, password)
+      this.halamanDashboard.tampilkanDashboard(customer)
     } catch (e) {
       this.halamanLogin.tampilkanPesanError("Login gagal")
     }

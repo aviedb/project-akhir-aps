@@ -23,30 +23,64 @@ class ServiceAPI
     result = HTTP.get(this.END_POINT_URL, query)
     return result
   end
-
-  Film[] fetchAllFilm()
+  
+  Film[] fetchAllFilmsByLocation(String location)
   begin
-  query = fetch all films query
+    query = fetch all films query with that location
     result = HTTP.get(this.END_POINT_URL, query)
     return result
   end
 
   Bioskop fetchBioskop(int id)
   begin
+    query = fetch film by id query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
   Bioskop[] fetchAllBioskop()
   begin
+    query = fetch all films query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
-  void insertPesanan(Pesanan pesanan)
+  Bioskop fetchBioskop(int film_id)
   begin
+    query = fetch film by film_id query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
+  end
+
+  void insertPesanan(Pesanan p)
+  begin
+    query = insert to pesanan table with p's data
+    HTTP.get(this.END_POINT_URL, query)
   end
 
   Customer login(String email, String password)
   begin
+    query = fetch a user using the username
+    result = HTTP.get(this.END_POINT_URL, query)
+
+    if (result not exist) throw 'username not exist'
+
+    customer = new Customer(spread result.data)
+
+    if (result.password = password) return customer
+    else throw 'password does not match'
   end
 
-  Customer register(Customer customer)
+  Customer register(String nama, String email, String noHP, String password)
   begin
+    query = fetch a user using the username
+    result = HTTP.get(this.END_POINT_URL, query)
+
+    if (result is exist) throw 'username already taken'
+
+    query = register a user using this method parameters
+    result = HTTP.get(this.END_POINT_URL, query)
+
+    customer = new Customer(spread result.data)
+    return customer
   end
