@@ -23,5 +23,3 @@ class FilmController
       this.screenPemilihanFilm.tampilkanPesanError()
     }
   end
-
-

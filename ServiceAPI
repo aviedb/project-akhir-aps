@@ -26,17 +26,23 @@ class ServiceAPI
 
   Film[] fetchAllFilm()
   begin
-  query = fetch all films query
+    query = fetch all films query
     result = HTTP.get(this.END_POINT_URL, query)
     return result
   end
 
   Bioskop fetchBioskop(int id)
   begin
+    query = fetch bioskop by id query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
   Bioskop[] fetchAllBioskop()
   begin
+    query = fetch all bioskop query
+    result = HTTP.get(this.END_POINT_URL, query)
+    return result
   end
 
   void insertPesanan(Pesanan pesanan)
