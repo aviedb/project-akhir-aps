@@ -15,4 +15,10 @@ class LoginController
 
   void login(String email, String password)
   begin
+    try {
+      customer = ServiceAPI.getInstance().login(email, password)
+      this.halamanDashboard.tampilkanDashboard()
+    } catch (e) {
+      this.halamanLogin.tampilkanPesanError("Login gagal")
+    }
   end

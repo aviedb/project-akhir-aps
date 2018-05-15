@@ -16,4 +16,12 @@ class FilmController
 
   void memilihFilm(int id_film)
   begin
+    try {
+      film = ServiceAPI.getInstance().getFilm()
+      this.screenInformasiFilm.tampilkanInformasiFilm(film)
+    } catch (e) {
+      this.screenPemilihanFilm.tampilkanPesanError()
+    }
   end
+
+
