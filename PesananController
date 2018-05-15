@@ -1,0 +1,16 @@
+class PesananController
+  Declarations
+    HalamanPemesanan halamanPemesanan
+
+  void setHalamanPemesanan(HalamanPemesanan halamanPemesanan)
+  begin
+    this.halamanPemesanan = halamanPemesanan
+  end
+
+  Film[] getFilm(String location)
+  begin
+  end
+
+  Bioskop[] getBioskop(int id)
+  begin
+  end
